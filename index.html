@@ -7,33 +7,46 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="content">
+       <h2>Calculadora Básica</h2>
       <div class="calculator">
         <input type="text" id="result" value="0" disabled>
         <div class="button-container">
             <div class="operation">
-            <button onclick="clearDisplay()">Clear</button>
+            <button onclick="clearDisplay()">C</button>
             <button onclick="operator('/')">/</button>
             <button onclick="operator('*')">*</button>
             <button onclick="operator('+')">+</button>
             <button onclick="operator('-')">-</button>
         </div>
-        <div class="numbers">
+        <div class="row1">
             <button onclick="number('1')">1</button>
             <button onclick="number('2')">2</button>
             <button onclick="number('3')">3</button>
+        </div>
+        <div class="row2">
             <button onclick="number('4')">4</button>
             <button onclick="number('5')">5</button>
             <button onclick="number('6')">6</button>
+        </div>
+        <div class="row3">
             <button onclick="number('7')">7</button>
             <button onclick="number('8')">8</button>
             <button onclick="number('9')">9</button>
-            <button onclick="number('0')">0</button>
         </div>
+        <div class="total">
+            <button onclick="number('0')">0</button>
             <button onclick="calculate()">=</button>
         </div>
+        </div>
       </div>
-    
+    </div>
+
+    <footer>
+        <p>&copy; 2024 <a href="https://github.com/HttpsSebas">Seba Infante</a>. Todos los derechos reservados.</p>
+        <p>Desarrollado por <a href="https://www.linkedin.com/in/sebastian-infante-7324a3275/">Sebastian Infante</a></p>
+        <p>Contacto: <a href="mailto:sebastian25infante@gmail.com">sebastian25infante@gmail.com</a></p>
+    </footer>
     
     <script src="script.js"></script>
 </body>

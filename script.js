@@ -17,6 +17,10 @@ function clearDisplay(){
 }
 
 function calculate(){
+     if(expresion === ""){
+        result.value = "Ingrese una operación";
+     }
+     else{
     try{
    let resultado = eval(expresion);
    result.value = resultado;
@@ -25,4 +29,5 @@ function calculate(){
     result.value = "Error";
     expresion = '';
    }
+}
 }
